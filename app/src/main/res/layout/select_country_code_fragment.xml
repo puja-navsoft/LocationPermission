@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+        <variable
+            name="selectcountry"
+            type="com.muve.muve_it_driver.ui.auth.choose_country.SelectCountryCodeViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A6000000"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="@dimen/_1sdp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        tools:context=".ui.auth.choose_country.SelectCountryCodeFragment">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_4">
+
+            <TextView
+                android:id="@+id/txt_choose_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/cou_heading"
+                android:textColor="@color/text_color_heading"
+                android:textSize="@dimen/_22ssp" />
+
+
+            <ImageView
+                android:id="@+id/img_close_country"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/close" />
+
+
+            <TextView
+                android:paddingStart="@dimen/_18sdp"
+                android:id="@+id/txtCrntlctn"
+                android:layout_below="@+id/txt_choose_account"
+                android:textColor="#666666"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:background="#EEEEEE"
+                android:text="Current Location"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+            </TextView>
+
+            <TextView
+                android:paddingStart="@dimen/_18sdp"
+                android:id="@+id/crntLctnCode"
+                android:layout_below="@+id/txtCrntlctn"
+                android:text="Canada (+1)"
+                android:textColor="#232121"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:background="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/crntLctnCode"
+                 />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</layout>

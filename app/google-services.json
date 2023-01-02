@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "10929077588",
+    "project_id": "muve-it-332901",
+    "storage_bucket": "muve-it-332901.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10929077588:android:d7e12695271aafea065cc1",
+        "android_client_info": {
+          "package_name": "com.muve.muve_it"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "10929077588-oogkrl6aold2910iv2tg2ank8dtbdsg1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.muve.muve_it",
+            "certificate_hash": "acdab908bf2605df80760d2b36c978e6f39eb4f4"
+          }
+        },
+        {
+          "client_id": "10929077588-gkhpe389rl8fiu24j2guuqbms8s2una4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkoH8BjK8p6TBv5S0iBv2XsSmCIOgsq_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "10929077588-gkhpe389rl8fiu24j2guuqbms8s2una4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "10929077588-dsim8207apk5n24itgi2045fk3uu1ja7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.MuveIT.MuveIT"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10929077588:android:460d1330a9b165bc065cc1",
+        "android_client_info": {
+          "package_name": "com.muve.muve_it_driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "10929077588-gkhpe389rl8fiu24j2guuqbms8s2una4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkoH8BjK8p6TBv5S0iBv2XsSmCIOgsq_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "10929077588-gkhpe389rl8fiu24j2guuqbms8s2una4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "10929077588-dsim8207apk5n24itgi2045fk3uu1ja7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.MuveIT.MuveIT"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

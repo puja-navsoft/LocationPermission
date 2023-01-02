@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vehicleequipment.VehicleScreen"
+    >
+
+    <ScrollView
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:id="@+id/ly">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mainCns"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F5F6F6F6">
+
+            <ImageView
+                android:id="@+id/iv_noDamage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                app:layout_constraintStart_toEndOf="@+id/iv_yesDamage"
+                app:layout_constraintTop_toTopOf="@+id/iv_yesDamage"
+                app:srcCompat="@drawable/nowhite" />
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/left_arrow" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="27sp"
+                android:textColor="#242424"
+                android:layout_marginEnd="25dp"
+                android:text="Base Requirements: Vehicle, Equipment &amp; Documents."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/iv_back"
+                app:layout_constraintTop_toBottomOf="@+id/iv_back" />
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1."
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="15sp"
+                android:textColor="#242424"
+                app:layout_constraintStart_toStartOf="@+id/textView15"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Is your vehicle ( Pickup truck or cargo van ) no greater than 10 years old?"
+                android:textColor="#242424"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView15"
+                app:layout_constraintStart_toEndOf="@+id/textView16"
+                app:layout_constraintTop_toTopOf="@+id/textView16" />
+
+            <ImageView
+                android:id="@+id/iv_yesYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:layout_constraintStart_toStartOf="@+id/textView17"
+                app:layout_constraintTop_toBottomOf="@+id/textView17"
+                app:srcCompat="@drawable/yeswhite" />
+
+            <ImageView
+                android:id="@+id/iv_noYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                app:layout_constraintStart_toEndOf="@+id/iv_yesYear"
+                app:layout_constraintTop_toTopOf="@+id/iv_yesYear"
+                app:srcCompat="@drawable/nowhite" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="2."
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="15sp"
+                android:textColor="#242424"
+                app:layout_constraintStart_toStartOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/iv_yesYear" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Is your vehicle clean and free of visible rust, dents, damage, or defects?"
+                android:textColor="#242424"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView15"
+                app:layout_constraintStart_toStartOf="@+id/textView17"
+                app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+            <ImageView
+                android:id="@+id/iv_yesDamage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:layout_constraintStart_toStartOf="@+id/iv_yesYear"
+                app:layout_constraintTop_toBottomOf="@+id/textView19"
+                app:srcCompat="@drawable/yeswhite" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="3."
+                android:textColor="#242424"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_medium"
+                app:layout_constraintStart_toStartOf="@+id/textView18"
+                app:layout_constraintTop_toBottomOf="@+id/iv_yesDamage" />
+
+            <TextView
+                android:id="@+id/textmaintransView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Uploaded Documents required:"
+                android:textColor="#242424"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_medium"
+                app:layout_constraintEnd_toEndOf="@+id/textView15"
+                app:layout_constraintStart_toStartOf="@+id/iv_yesDamage"
+                app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+            <TextView
+                android:id="@+id/texttooltipView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Phase 1 : Drivers License, Vehicle Ownership and Valid Insurance slip."
+                android:textColor="#242424"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/textmaintransView"
+                app:layout_constraintStart_toStartOf="@+id/textmaintransView"
+                app:layout_constraintTop_toBottomOf="@+id/textmaintransView" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Phase 2: Criminal Record Check"
+                android:textColor="#242424"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_medium"
+                app:layout_constraintStart_toStartOf="@+id/texttooltipView"
+                app:layout_constraintTop_toBottomOf="@+id/texttooltipView" />
+
+            <ImageView
+                android:id="@+id/iv_yesCriminal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:layout_constraintStart_toStartOf="@+id/textView17"
+                app:layout_constraintTop_toBottomOf="@+id/textView23"
+                app:srcCompat="@drawable/yeswhite" />
+
+            <ImageView
+                android:id="@+id/iv_noCriminal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                app:layout_constraintStart_toEndOf="@+id/iv_yesYear"
+                app:layout_constraintTop_toTopOf="@+id/iv_yesCriminal"
+                app:srcCompat="@drawable/nowhite" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="4."
+                android:textColor="#242424"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_medium"
+                app:layout_constraintStart_toStartOf="@+id/textView20"
+                app:layout_constraintTop_toBottomOf="@+id/iv_yesCriminal" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Do you have a minimum of 2 ratchet straps, 2 bungee cords, tarp (@ least 10’x10’), and 2 moving blankets to secure and protect cargo during transportation?"
+                android:textColor="#242424"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView15"
+                app:layout_constraintStart_toEndOf="@+id/textView24"
+                app:layout_constraintTop_toTopOf="@+id/textView24" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:layout_constraintStart_toStartOf="@+id/iv_yesYear"
+                app:layout_constraintTop_toBottomOf="@+id/textView25"
+                app:srcCompat="@drawable/yeswhite" />
+
+            <ImageView
+                android:id="@+id/iv_noProtect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                app:layout_constraintStart_toEndOf="@+id/iv_yesDamage"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:srcCompat="@drawable/nowhite" />
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:enabled="false"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/round_background_2_grey"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingTop="@dimen/_5sdp"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textView25"
+                app:layout_constraintStart_toStartOf="@+id/textView24"
+                app:layout_constraintTop_toBottomOf="@+id/iv_noProtect" />
+
+            <ImageView
+                android:id="@+id/iv_info"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView23"
+                app:layout_constraintStart_toEndOf="@+id/textView23"
+                app:layout_constraintTop_toBottomOf="@+id/texttooltipView"
+                app:srcCompat="@drawable/information" />
+
+            <View
+                android:visibility="invisible"
+                android:id="@+id/maintransView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@id/mainCns"
+                android:background="@drawable/round_background_2_trans"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:visibility="invisible"
+                android:id="@+id/tooltipView"
+                android:layout_width="360dp"
+                android:layout_height="125dp"
+                android:background="@drawable/round_background_2_white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/texttooltipView"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/tooltipImg"
+                android:layout_width="19dp"
+                android:layout_height="17dp"
+                app:layout_constraintBottom_toTopOf="@+id/iv_info"
+                app:layout_constraintEnd_toEndOf="@+id/iv_info"
+                app:layout_constraintStart_toStartOf="@+id/iv_info"
+                app:srcCompat="@drawable/tooltip" />
+
+            <TextView
+                android:gravity="center"
+                android:visibility="invisible"
+                android:layout_margin="8dp"
+                android:id="@+id/tooltipTxt"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:textColor="#666666"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:text="Applicants will be required to complete our 10\nminute training session and then upload their\nCriminal Record Check for final approval to\nbecome a Muve-It Service provider.”"
+                app:layout_constraintBottom_toBottomOf="@+id/texttooltipView"
+                app:layout_constraintEnd_toEndOf="@+id/textmaintransView"
+                app:layout_constraintStart_toStartOf="@+id/tooltipView"
+                app:layout_constraintTop_toTopOf="@+id/tooltipView" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

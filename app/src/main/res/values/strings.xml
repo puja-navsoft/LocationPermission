@@ -1,0 +1,344 @@
+<resources>
+    <string name="app_name">MuveIt\nDriver</string>
+    <string name="heading">Hauling goods from here to there anytime</string>
+    <string name="welcomeText">Welcome to MUVE-IT</string>
+    <string name="welcome_note">Welcome to MUVE-IT</string>
+    <string name="tag_log_in">LOG IN</string>
+    <string name="tag_forgetpassword">FORGOT PASSWORD</string>
+    <string name="tag_register">Register</string>
+    <string name="tag_social">Connect with social</string>
+    <string name="tag_social_Facebook">Continue With Facebook</string>
+    <string name="tag_social_Google">Continue with Google</string>
+    <string name="tag_social_Instagram">Continue with Instagram</string>
+    <string name="tag">Getting your goods from here\nto there anytime</string>
+    <string name="existing_user">Existing user?</string>
+    <string name="login_now">Login now</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+    <string name="dialog_permission_title">Grant permissions</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+    <string name="logout">Do you want to logout?</string>
+
+    <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">
+        AIzaSyDnrr8nR7j2_juye271dg_K7VE9gi7NGtg
+    </string>
+
+  <!--  <string name="API_KEY">AIzaSyDnrr8nR7j2_juye271dg_K7VE9gi7NGtg</string>-->
+    <string name="delete">Do you want to delete your account?</string>
+
+    <string name="service_already_running">Service is currently in progress</string>
+    <string name="service_start_successfully">Service has been successfully started</string>
+    <string name="gps_enable">GPS enabled</string>
+    <string name="please_turn_on_gps">Please turn on your GPS</string>
+
+    <string name="background_location_permission_message">
+       <b>Allow only while using the app</b> permission has been granted. If you want
+        to get location updates in the background even when not using the app then grant
+        <b>Allow all the time</b> permission
+    </string>
+    <string name="pending">Thank you for uploading your documents. Please allow 3-4 business for their review. We will contact you via email with feedback on next steps.</string>
+    <string name="Pickup_Truck">Pickup Truck</string>
+    <string name="Cargo_van">Cargo Van</string>
+    <string name="you_selected">You selected:</string>
+    <string name="btn_continueandverify">Verify &amp; Continue</string>
+    <string name="notification_channel_id">com.muve.muve_it_driver</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="lbl_set_profile_photo">Attach proof and upload</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="lbl_choose_document">Choose Document</string>
+    <!--LogIn Page-->
+    <string name="log_in_sub_heading">Enter your details and continue</string>
+    <string name="forgetPassword_heading">Please enter your mobile number.  We will send you an OTP to reset your password</string>
+    <string name="edt_phone_number">Phone Number / Email Id</string>
+    <string name="edt_typeyourmsg">Type your message …</string>
+    <string name="edt_email">Email address</string>
+    <string name="pleasewait">Please wait ..</string>
+    <string name="youhavebeenloggedinfromanotherdevice">There is currently another device logged into your account.</string>
+
+    <string name="edt_password">Show password</string>
+    <string name="tv_show_password">Show</string>
+    <string name="tv_remember_me">Remember me</string>
+    <string name="tv_hide_password">Hide</string>
+    <string name="tv_forgot_password">Forgot password?</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_continue_only">Continue</string>
+
+    <!--Register Page-->
+    <string name="reg_heading">Register</string>
+    <string name="reg_first_name">First name</string>
+    <string name="reg_last_name">Last name</string>
+    <string name="reg_birthday">Email</string>
+    <string name="promotional">Promotional code</string>
+    <string name="password">Password</string>
+    <string name="confirmpassword">Confirm password</string>
+    <string name="about_us">How did you here about us?</string>
+    <string name="term_and_conditions">I accept and understand the </string>
+    <string name="term_conditions">Terms &amp; conditions</string>
+    <string name="Privacy_Policy">Privacy policy</string>
+
+
+    <!--Verify Code Page-->
+    <string name="ver_heading">Phone (text) Verification</string>
+    <string name="ver_heading_email">Email Verification</string>
+    <string name="ver_sub_heading">Enter the 4 digit code sent to your phone.</string>
+    <string name="ver_sub_heading_modify">Enter the verification code sent</string>
+    <string name="ver_enter_code">Enter code</string>
+    <string name="ver_resend">Resend</string>
+
+    <!--Create Password Page-->
+    <string name="pass_heading">Create password</string>
+    <string name="pass_sub_heading">Password must be 8 or more characters\nwith a mix of letters, numbers.</string>
+    <string name="pass_enter_password">Enter Password</string>
+    <string name="pass_confirm_password">Confirm Password</string>
+
+    <!--Choose Social Account Page-->
+    <string name="soc_heading">Choose an account</string>
+    <string name="soc_facebook">Facebook</string>
+    <string name="soc_google">Google</string>
+
+    <!--Select Country Page-->
+    <string name="cou_heading">Select Country</string>
+    <string name="select_about">Select "About Us"</string>
+    <string name="edit_phone">Edit Phone number.</string>
+    <string name="edit_email">Edit email</string>
+
+    <!--Landing Page-->
+    <string name="land_heading_hello">Hello</string>
+    <string name="land_heading_name">Michael</string>
+    <string name="land_pickup">Choose pickup address</string>
+    <string name="search_destination">Search destination</string>
+    <string name="currentlocation">Current location</string>
+    <string name="land_schedule">Schedule</string>
+    <string name="land_home">Home</string>
+    <string name="land_office">Office</string>
+    <string name="work">Work</string>
+    <string name="land_gym">Gym</string>
+    <string name="Other">Other</string>
+    <string name="tryagain">Please check you internet connection and try again</string>
+    <string name="tryagain_error">Please wait a few minutes and try again</string>
+    <!--Navigation Drawer Page-->
+    <string name="nav_nave">Michael Jordan</string>
+    <string name="nav_ratings">4.9</string>
+    <string name="nav_code">9021</string>
+    <string name="nav_logout">Logout</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_service">Service Call History</string>
+    <string name="nav_Notifications">Notifications</string>
+    <string name="nav_Payments">Earning</string>
+    <string name="nav_Settings">Settings</string>
+    <string name="nav_ReferralsPromotion">Referrals &amp; Promotion</string>
+    <string name="nav_Help">Help</string>
+    <string name="nav_version">Version : </string>
+    <string name="nav_my_trips">My trips</string>
+    <string name="nav_notification">Notification</string>
+    <string name="nav_invite_friends">Invite friends</string>
+    <string name="nav_settings">Settings</string>
+    <string name="msg_no_internet">Please check your internet connection</string>
+
+    <!--Schedule Ride Page-->
+    <string name="sch_heading">Schedule a service</string>
+    <string name="sch_date">Friday, December 6</string>
+    <string name="sch_time">6:45 PM - 7:00 PM</string>
+    <string name="sch_confirm">CONFIRM</string>
+
+    <!--Pick Up Drop Off Page-->
+    <string name="pick_pickup">Pick Up Truck</string>
+    <string name="drop_off">Cargo Van</string>
+    <string name="pick_saved_places">Saved Places</string>
+    <string name="pick_recycler_heading">Navigators Software</string>
+    <string name="pick_recycler_sub_heading">86A Topsia Road, Kolkata 700046</string>
+
+    <!--My Trips Page-->
+    <string name="trip_title">Past Trip</string>
+    <string name="trip_heading">Mini van</string>
+    <string name="trip_sub_heading">11/11/2019 10:10 AM</string>
+    <string name="trip_amount">$30.00</string>
+    <string name="trip_destination1">112 Prince Ave.Listowel,Canada</string>
+    <string name="trip_destination2">7209 S. Rose St.Camrose,Canada</string>
+    <string name="trip_status">Card</string>
+
+    <!--Notifications Page-->
+    <string name="noti_heading">Notifications</string>
+    <string name="noti_recycler_heading">Promotion</string>
+    <string name="noti_recycler_sub_heading">Invite a friend and get 3 coupons</string>
+
+    <!--Invite Friends Page-->
+    <string name="inv_title">Invite Friends</string>
+    <string name="inv_heading">Get 3 Coupon each</string>
+    <string name="inv_sub_heading">When your friend sign up with your referral code, you will both get 3 coupons</string>
+    <string name="inv_share_code">Share your invite code</string>
+    <string name="inv_btn_invite_friends">INVITE FRIENDS</string>
+
+    <!--Settings Page-->
+    <string name="set_title">Settings</string>
+    <string name="set_phone">+1 99035 56896</string>
+    <string name="set_email">michael2345@gmail.com</string>
+    <string name="set_privacy">Privacy</string>
+    <string name="set_security">Security</string>
+    <string name="set_clear_cache">Clear Cache</string>
+    <string name="set_contact_us">Contact Us</string>
+    <string name="set_log_out">LOG OUT</string>
+
+    <!--Invite Friends List Page-->
+    <string name="invi_name">Jonathan Woodkin</string>
+    <string name="invi_button_send">SEND</string>
+
+    <!--Trip Details Page-->
+    <string name="trip_detail_text">Trip Detail</string>
+    <string name="trip_detail_value">0.56 km</string>
+    <string name="trip_detail_user_name">George Smith</string>
+    <string name="trip_detail_user_code">ABOE53265</string>
+    <string name="trip_detail_rate_text">You Rated George</string>
+    <string name="trip_detail_receipt">Receipt</string>
+    <string name="trip_detail_receipt_fare">Trip Fare</string>
+    <string name="trip_detail_receipt_fare_value">$30.00</string>
+    <string name="trip_detail_receipt_discount">Discount</string>
+    <string name="trip_detail_receipt_discount_value">$0.00</string>
+    <string name="trip_detail_receipt_subtotal">Subtotal</string>
+    <string name="trip_detail_receipt_subtotal_value">$30.00</string>
+    <string name="trip_detail_receipt_paid_cash">Paid By Cash</string>
+    <string name="trip_detail_receipt_paid_cash_value">$30.00</string>
+    <string name="trip_detail_help_text">Help</string>
+    <string name="trip_detail_help_accident">I was involved in an accident</string>
+    <string name="trip_detail_help_fare_or_fees">Review my fare or fees</string>
+    <string name="trip_detail_help_extra_cash">I paid extra cash</string>
+    <string name="trip_detail_help_lost_item">I lost an item</string>
+    <string name="trip_detail_help_unexpected_vehicle">My vehicle wasn\'t what I expected</string>
+    <string name="trip_detail_help_unprofessional">My driver was unprofessional</string>
+    <string name="trip_detail_help_different_issue">I had a different issue</string>
+
+    <!--Choose Cargo Page-->
+    <string name="cargo_heading">Choose a cargo</string>
+    <string name="cargo_item1_heading">Big and Bulk</string>
+    <string name="cargo_item1_sub_heading">Mauris accumsan euismod bibendum</string>
+    <string name="cargo_item2_heading">Light Weight</string>
+    <string name="cargo_item2_sub_heading">Mauris accumsan euismod bibendum</string>
+    <string name="cargo_item3_heading">Fragile</string>
+    <string name="cargo_item3_sub_heading">Mauris accumsan euismod bibendum</string>
+    <string name="cargo_Or">Or, </string>
+    <string name="cargo_scan_UPC">Scan a UPC</string>
+
+    <!--Choose a ride Page-->
+    <string name="ride_heading">Choose a ride</string>
+    <string name="ride_item1_heading">Mini Van</string>
+    <string name="ride_item1_sub_heading">750 kg payload</string>
+    <string name="ride_item1_amount">$30.00</string>
+    <string name="ride_item1_time">3 min</string>
+
+    <string name="ride_item2_heading">Pick Up Truck</string>
+    <string name="ride_item2_sub_heading">750 kg payload</string>
+    <string name="ride_item2_amount">$40.00</string>
+    <string name="ride_item2_time">5 min</string>
+
+    <string name="ride_item3_heading">Cube Van</string>
+    <string name="ride_item3_sub_heading">750 kg payload</string>
+    <string name="ride_item3_amount">$50.00</string>
+    <string name="ride_item3_time">10 min</string>
+
+    <string name="ride_pay_by">Pay By:</string>
+    <string name="ride_promo">Promo:</string>
+    <string name="ride_code">Code</string>
+    <string name="ride_confirm_ride">CONFIRM RIDE</string>
+
+    <!--Payment Method Page-->
+    <string name="pay_heading">Payment Method</string>
+    <string name="pay_master_card">MasterCard *********033</string>
+    <string name="pay_PhonePe">PhonePe ******236</string>
+    <string name="pay_btn">ADD ANOTHER METHOD</string>
+
+    <!--Confirm PickUp Page-->
+    <string name="con_title">Estimated ETA 3 min</string>
+    <string name="con_btn">CONFIRM PICKUP</string>
+
+    <!--Contact Driver Page-->
+    <string name="contact_contact_text">CONTACT</string>
+    <string name="contact_cancel_text">CANCEL</string>
+
+    <!--Cancel Page-->
+    <string name="cancel_heading">Are you sure want to cancel?</string>
+    <string name="cancel_sub_heading">You will be charged an additional\ncancellation fee on your next ride.</string>
+    <string name="cancel_go_back_btn">GO BACK</string>
+    <string name="cancel_cancel_ride_btn">CANCEL RIDE</string>
+
+    <!--Confirm DropOff Page-->
+    <string name="drop_yout_trip">Your Trip</string>
+    <string name="drop_change">Change</string>
+    <string name="drop_btn">CONFIRM DROPOFF</string>
+
+    <!--Rating Page-->
+    <string name="rate_title">Rating</string>
+    <string name="rate_message">OK, but had an issue</string>
+    <string name="rate_additional_comments">Additional Comments</string>
+    <string name="rate_tip_text">Wanna a tip for David?</string>
+    <string name="rate_tip_amount1">$1 </string>
+    <string name="rate_tip_amount2">$2 </string>
+    <string name="rate_tip_amount3">$5 </string>
+    <string name="rate_tip_amount4">$10</string>
+    <string name="rate_btn">DONE</string>
+
+    <!--Add another payment method-->
+    <string name="other_pay_title">Add Payment Method</string>
+    <string name="other_pay_item1">Credit/Debit Card</string>
+    <string name="other_pay_item2">PhonePe</string>
+    <string name="other_pay_item3">Paytm</string>
+
+    <!--Add Credit/Debit Card Details Page-->
+    <string name="card_details_title">Add Credit/Debit Card</string>
+    <string name="card_details_card_number">Card Number</string>
+    <string name="card_details_card_name">Name On Card</string>
+    <string name="card_details_validity">MM/YY</string>
+    <string name="card_details_cvv">CVV</string>
+    <string name="card_btn">NEXT</string>
+
+    <!--Saved Places Page-->
+    <string name="saved_places_title">Choose a Place</string>
+    <string name="saved_places_heading1">Home</string>
+    <string name="saved_places_subheading1">112 Prince Ave.Listowel, ON N4W 8G5</string>
+
+    <string name="saved_places_heading2">Office</string>
+    <string name="saved_places_subheading2">7209 S. Rose St.Camrose, AB T4V 4P8</string>
+
+
+    <string name="saved_places_heading3">Gym</string>
+    <string name="saved_places_subheading3">762 Williams StreetMount Pearl, LB A1N 4G2</string>
+
+    <!--Choose Gender Page-->
+    <string name="gender_title">Choose a Gender</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="gender_other">Other</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="take_photo">Take Photo</string>
+
+    <string name="please_wait">Please wait</string>
+    <string name="choose_from_gallery">Choose From Gallery</string>
+    <string name="delete_photo">Delete Photo</string>
+    <string name="upload_files">Upload Files</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="confirm">Confirm</string>
+    <string name="pleaseGiveBothCameraAndStoragePermissions">Please Give Both Camera And Storage Permissions</string>
+    <string name="please_give_camera_permission">Please give camera permission</string>
+    <string name="please_give_permission_from_app_settings">Please give permission from app settings</string>
+    <string name="externalStorageIsNotMounted">External Storage Is Not Mounted</string>
+    <string name="No">No</string>
+    <string name="Yes">Yes</string>
+    <string name="OK">OK</string>
+    <string name="documents_verification">Documents Verification</string>
+    <string name="complete_document_txt">Thank you for completing your documents. Please allow 3-4 business for their review. We will contact you via email with feedback on next steps.</string>
+    <string name="location_txt">Muve-It collects your location data when the app is open in the foreground or background.  We do this to calculate estimated and actual distances between pick-up and drop-off addresses, assign jobs based on proximity to pick-up address and enable navigation.This permission can be disabled at any time.</string>
+    <string name="camera_txt">Muve-It requires Camera permissions always to capture pictures required to create user profile and Customer/Driver documentation of cargo pre and post transport.This can be disable at any time.</string>
+    <string name="storage_txt">Storage permission is needed\nto save pictures and perform\nother necessary application\nfunctions</string>
+    <string name="phone_txt">Muve-It needs your phone permission to initiate direct phone calls to Muve-it Support from within the app.</string>
+    <string name="assessment_notification">Assessment notification</string>
+    <string name="complete_assessment_notification">Thank you for completing your Assessment. Please allow 3-4 business days for the review. We will contact you via email with feedback on next steps.</string>
+    <string name="allow_location_txt">Allow your Location</string>
+    <string name="allow_camera_txt">Allow your Camera</string>
+    <string name="allow_storage_txt">Allow your Storage</string>
+    <string name="allow_phone_txt">Allow your Phone</string>
+
+
+</resources>

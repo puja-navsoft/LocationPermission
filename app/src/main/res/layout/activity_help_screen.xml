@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    tools:context=".nav_drawer.HelpScreen">
+
+    <ScrollView
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:id="@+id/ly">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F5F6F6F6">
+
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:id="@+id/iv_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/left_arrow" />
+
+            <TextView
+                android:id="@+id/textv_tremcondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="25dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Help"
+                android:textColor="#242424"
+                android:textSize="27sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/iv_back"
+                app:layout_constraintTop_toBottomOf="@+id/iv_back" />
+
+            <View
+                android:id="@+id/v_faq"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="55dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textv_tremcondition">
+
+
+            </View>
+
+            <TextView
+                android:id="@+id/textv_report"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="FAQ"
+                android:autoLink="web"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/v_faq"
+                app:layout_constraintEnd_toStartOf="@+id/imagev_feature"
+                app:layout_constraintStart_toStartOf="@+id/textv_tremcondition"
+                app:layout_constraintTop_toTopOf="@+id/v_faq" />
+
+            <ImageView
+                android:id="@+id/imagev_feature"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/v_faq"
+                app:layout_constraintEnd_toEndOf="@+id/v_faq"
+                app:layout_constraintTop_toTopOf="@+id/v_faq"
+                app:srcCompat="@drawable/rightarrow" />
+
+            <View
+                android:id="@+id/view1"
+                app:layout_constraintTop_toBottomOf="@+id/v_faq"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"></View>
+
+            <View
+                android:id="@+id/v_report"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view1">
+
+
+            </View>
+
+            <TextView
+                android:id="@+id/textv_service"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Report a problem with the application"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/v_report"
+                app:layout_constraintEnd_toStartOf="@+id/imagev_contact"
+                app:layout_constraintStart_toStartOf="@+id/textv_report"
+                app:layout_constraintTop_toTopOf="@+id/v_report" />
+
+            <ImageView
+                android:id="@+id/imagev_contact"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/v_report"
+                app:layout_constraintEnd_toEndOf="@+id/v_report"
+                app:layout_constraintTop_toTopOf="@+id/v_report"
+                app:srcCompat="@drawable/rightarrow" />
+
+            <View
+                android:id="@+id/view2"
+                app:layout_constraintTop_toBottomOf="@+id/v_report"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"></View>
+
+            <View
+                android:id="@+id/v_service"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2">
+
+
+            </View>
+
+            <TextView
+                android:id="@+id/textv_feature"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Service improvement suggestions"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/v_service"
+                app:layout_constraintEnd_toStartOf="@+id/imagev_contact"
+                app:layout_constraintStart_toStartOf="@+id/textv_report"
+                app:layout_constraintTop_toTopOf="@+id/v_service" />
+
+            <ImageView
+                android:id="@+id/imagev_tremcondition"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/v_service"
+                app:layout_constraintEnd_toEndOf="@+id/v_service"
+                app:layout_constraintTop_toTopOf="@+id/v_service"
+                app:srcCompat="@drawable/rightarrow" />
+
+            <View
+                android:id="@+id/view3"
+                app:layout_constraintTop_toBottomOf="@+id/v_service"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"></View>
+
+
+            <View
+                android:id="@+id/v_feature"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view3">
+
+
+            </View>
+            <TextView
+                android:id="@+id/textv_contact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Application feature request"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/v_feature"
+                app:layout_constraintEnd_toStartOf="@+id/imagev_contact"
+                app:layout_constraintStart_toStartOf="@+id/textv_report"
+                app:layout_constraintTop_toTopOf="@+id/v_feature" />
+
+            <ImageView
+                android:id="@+id/imageView27"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/v_feature"
+                app:layout_constraintEnd_toEndOf="@+id/v_feature"
+                app:layout_constraintTop_toTopOf="@+id/v_feature"
+                app:srcCompat="@drawable/rightarrow" />
+
+            <View
+                android:id="@+id/view4"
+                app:layout_constraintTop_toBottomOf="@+id/v_feature"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"></View>
+
+            <View
+                android:id="@+id/v_contact"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view4">
+
+
+            </View>
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Contact US"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/v_contact"
+                app:layout_constraintEnd_toStartOf="@+id/imagev_contact"
+                app:layout_constraintStart_toStartOf="@+id/textv_report"
+                app:layout_constraintTop_toTopOf="@+id/v_contact" />
+
+            <ImageView
+                android:id="@+id/imageView28"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/v_contact"
+                app:layout_constraintEnd_toEndOf="@+id/v_contact"
+                app:layout_constraintTop_toTopOf="@+id/v_contact"
+                app:srcCompat="@drawable/rightarrow" />
+
+            <View
+                android:id="@+id/view5"
+                app:layout_constraintTop_toBottomOf="@+id/v_contact"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"></View>
+
+            <View
+                android:layout_marginTop="15dp"
+                android:id="@+id/v_tremcondition"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view5">
+
+
+            </View>
+
+            <TextView
+                android:id="@+id/tv_termcondition"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Terms and Conditions"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/v_tremcondition"
+                app:layout_constraintEnd_toStartOf="@+id/imagev_contact"
+                app:layout_constraintStart_toStartOf="@+id/textv_report"
+                app:layout_constraintTop_toTopOf="@+id/v_tremcondition" />
+
+            <ImageView
+                android:id="@+id/imageView29"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/v_tremcondition"
+                app:layout_constraintEnd_toEndOf="@+id/v_tremcondition"
+                app:layout_constraintTop_toTopOf="@+id/v_tremcondition"
+                app:srcCompat="@drawable/rightarrow" />
+
+            <View
+                android:id="@+id/view6"
+                app:layout_constraintTop_toBottomOf="@+id/v_tremcondition"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"></View>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,2 @@
+rootProject.name = "Muve-It"
+include ':app'

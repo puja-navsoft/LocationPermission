@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/headerpart"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/acceptservicecalltopview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/navClickAgain"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rounded_corner_1" />
+
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/iv_menusymbol"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            app:layout_constraintBottom_toBottomOf="@+id/navClickAgain"
+            app:layout_constraintEnd_toEndOf="@+id/navClickAgain"
+            app:layout_constraintStart_toStartOf="@+id/navClickAgain"
+            app:layout_constraintTop_toTopOf="@+id/navClickAgain"
+            app:srcCompat="@drawable/menu" />
+
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text=" "
+            android:textColor="#242424"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/navClickAgain"
+            app:layout_constraintEnd_toStartOf="@+id/iv_userimg"
+            app:layout_constraintStart_toEndOf="@+id/navClickAgain"
+            app:layout_constraintTop_toTopOf="@+id/navClickAgain" />
+
+        <ImageView
+            android:id="@+id/iv_userimg"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/navClickAgain"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/navClickAgain"
+            app:srcCompat="@drawable/rounded_corner_grey" />
+
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_userimg"
+            app:layout_constraintEnd_toEndOf="@+id/iv_userimg"
+            app:layout_constraintStart_toStartOf="@+id/iv_userimg"
+            app:layout_constraintTop_toTopOf="@+id/iv_userimg"
+            app:srcCompat="@drawable/userimg" />
+
+        <TextView
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="30dp"
+            android:id="@+id/tv_servicename"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/round_backgroundlightblue"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="5dp"
+            android:paddingStart="5dp"
+            android:text="Primary Service"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="#2271FC"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_vehicleType"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_username" />
+
+
+        <TextView
+            android:layout_marginEnd="28dp"
+            android:id="@+id/tv_vehicleType"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/round_backgroundorngelight"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="5dp"
+            android:paddingStart="15dp"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="#F26822"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_servicename"
+            app:layout_constraintTop_toBottomOf="@+id/tv_username" />
+
+        <ImageView
+            app:layout_constraintEnd_toStartOf="@id/tv_cartype"
+            android:id="@+id/imageView30"
+            android:layout_width="14dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_vehicleType"
+            app:layout_constraintStart_toStartOf="@+id/tv_vehicleType"
+            app:layout_constraintTop_toTopOf="@+id/tv_vehicleType"
+            app:srcCompat="@drawable/carorng" />
+
+        <TextView
+            android:id="@+id/tv_cartype"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Cargo-Pickup"
+            android:textColor="#F26822"
+            android:textSize="10sp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_vehicleType"
+            app:layout_constraintEnd_toEndOf="@+id/tv_vehicleType"
+            app:layout_constraintStart_toEndOf="@+id/imageView30"
+            app:layout_constraintTop_toTopOf="@+id/tv_vehicleType" />
+
+        <TextView
+
+            android:id="@+id/tv_servicerequestid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="MI Service Request :"
+            android:textColor="#919191"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_servicename"
+            app:layout_constraintTop_toBottomOf="@+id/tv_servicename" />
+
+        <TextView
+            android:id="@+id/tv_servicerequestid_"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text=" #KIT-12345"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_servicerequestid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_servicerequestid"
+            app:layout_constraintTop_toTopOf="@+id/tv_servicerequestid" />
+
+        <ImageView
+            android:id="@+id/iv_downarrow"
+            android:padding="18dp"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="7dp"
+            android:visibility="visible"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tv_vehicleType"
+            app:layout_constraintStart_toStartOf="@+id/tv_servicename"
+            app:layout_constraintTop_toBottomOf="@+id/tv_servicerequestid_"
+            app:srcCompat="@drawable/down_arrow" />
+
+        <ImageView
+            android:id="@+id/iv_upArrowNew"
+            android:padding="18dp"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="7dp"
+            android:visibility="gone"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tv_vehicleType"
+            app:layout_constraintStart_toStartOf="@+id/tv_servicename"
+            app:layout_constraintTop_toBottomOf="@+id/tv_servicerequestid_"
+            app:srcCompat="@drawable/uparrow" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--
+    <View
+        android:visibility="visible"
+        android:clickable="true"
+        android:id="@+id/view_pouseservice"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#F8F8F8"
+        app:layout_constraintTop_toBottomOf="@+id/acceptservicecalltopview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+
+    </View>
+-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:visibility="gone"
+        android:clickable="true"
+        android:id="@+id/view_pouseservice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#EBEBEB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acceptservicecalltopview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <Button
+            android:visibility="visible"
+            android:id="@+id/tv_pouseservice"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/pouseservicebuttonblack"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/_5sdp"
+            android:text="Pause Service"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_pouseservice"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/view_pouseservice"
+            app:layout_constraintTop_toTopOf="@+id/view_pouseservice" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

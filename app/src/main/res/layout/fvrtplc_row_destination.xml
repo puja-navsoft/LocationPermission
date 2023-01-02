@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/rowclick"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:paddingTop="12dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="16dp"
+        android:id="@+id/tv_Addrss"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Home"
+        android:capitalize="words"
+        android:textColor="#222324"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_subAd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/poppins_regular"
+        android:paddingBottom="10dp"
+        android:capitalize="words"
+        android:text="86A Topsia Road, Kolkata 700046"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_Addrss"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Addrss" />
+
+    <ImageView
+        android:layout_marginStart="20dp"
+        android:id="@+id/imageView2"
+        android:layout_width="28dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_subAd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_Addrss"
+        android:src="@drawable/mapsloc" />
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_marginEnd="25dp"
+        android:id="@+id/et_edit"
+        android:layout_width="5dp"
+        android:layout_height="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_subAd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/moreinfavplc" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/colorTransparent20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subAd"
+       >
+
+    </View>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF5353"
+    tools:context=".cancelservicetoreturnhome.AfterCancelServiceScreen">
+
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/iv_userPhoto"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/round_grey" />
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/iv_userPhotoset"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_userPhoto"
+        app:layout_constraintEnd_toEndOf="@+id/iv_userPhoto"
+        app:layout_constraintStart_toStartOf="@+id/iv_userPhoto"
+        app:layout_constraintTop_toTopOf="@+id/iv_userPhoto"
+        app:srcCompat="@drawable/userimg" />
+
+    <ImageView
+        android:id="@+id/imageView44"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.436"
+        app:srcCompat="@drawable/checkwhite" />
+
+    <TextView
+
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="$00.00"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView44" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/textView75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Service Request"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:paddingStart="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center"
+        android:id="@+id/tv_servicenumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/textView77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text=" has been"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView75"
+        app:layout_constraintEnd_toEndOf="@+id/iv_userPhoto"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_servicenumber"
+        app:layout_constraintTop_toTopOf="@+id/textView75"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_earnedmoney"
+        android:layout_width="0dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_height="wrap_content"
+        android:text="cancelled: You have been charged: $00.00(inclusive of all taxes)"
+        app:layout_constraintEnd_toEndOf="@+id/textView77"
+        app:layout_constraintStart_toStartOf="@+id/textView75"
+        app:layout_constraintTop_toBottomOf="@+id/tv_servicenumber" />
+
+
+    <Button
+        android:id="@+id/tv_returnToHome"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/round_background_2white"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingTop="@dimen/_5sdp"
+        android:text="Return To Home"
+        android:layout_marginStart="18dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/iv_userPhoto"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

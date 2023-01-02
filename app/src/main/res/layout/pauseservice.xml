@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pauseservice"
+    android:visibility="gone"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="185dp"
+        android:background="@color/colorTransparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/v_servicaCallPause"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whiteviewcorner"
+            android:clickable="true"
+            android:paddingBottom="10dp"
+            android:visibility="visible"
+            app:layout_constraintVertical_bias="0.4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView61"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Service Call has been paused"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/v_servicaCallPause"
+                app:layout_constraintStart_toStartOf="@+id/v_servicaCallPause"
+                app:layout_constraintTop_toTopOf="@+id/v_servicaCallPause" />
+
+            <TextView
+                android:id="@+id/textView62"
+                android:paddingStart="20dp"
+                android:paddingEnd="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Press “Resume Service Call” when you are ready continue driving to the drop-off address. You are required to contact the customer if service is paused for longer than 5 minutes. Press “Transfer Call” to transfer your service now. An alternate Primary will be dispatched to your location to resume the service. You will forfeit 100% of the earnings from this service for cancelling at this point"
+                android:textColor="#666666"
+                android:textSize="15sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@+id/textView61" />
+
+
+
+            <View
+               android:layout_marginStart="20dp"
+                android:layout_marginEnd="12dp"
+                android:id="@+id/bar"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/grey"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/textView62"
+                app:layout_constraintStart_toStartOf="@+id/textView62"
+                app:layout_constraintTop_toBottomOf="@+id/textView62">
+
+            </View>
+
+            <TextView
+                android:id="@+id/textView66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Pause Timer"
+                android:textColor="#919191"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/bar"
+                app:layout_constraintStart_toStartOf="@+id/bar"
+                app:layout_constraintTop_toBottomOf="@+id/bar" />
+
+            <TextView
+                android:id="@+id/tv_pauseTimerCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="00:00"
+                android:textColor="#242424"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView66"
+                app:layout_constraintStart_toStartOf="@+id/textView66"
+                app:layout_constraintTop_toBottomOf="@+id/textView66" />
+
+
+
+            <TextView
+                android:id="@+id/tv_resumeCallService"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_corner_11"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="Resume Service Call"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_pauseTimerCount" />
+
+            <TextView
+                android:id="@+id/tv_transferCall"
+                android:layout_width="170dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/round_backgroundblack"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="Transfer Service Call"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_resumeCallService" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

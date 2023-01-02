@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:visibility="gone"
+    android:id="@+id/view_cancelservicecall"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:visibility="visible"
+        android:id="@+id/afterClickOncancelserviceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/carnerradioustransparentrectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <View
+            android:id="@+id/view36"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/whiteviewcorner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.417"></View>
+
+        <TextView
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/textView59"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Are you sure you want\nto cancel Service Call?"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="@+id/view36"
+            app:layout_constraintStart_toStartOf="@+id/view36"
+            app:layout_constraintTop_toTopOf="@+id/view36" />
+
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="You’ve notified the customer of your arrival and have been waiting at the pickup address for at least 5 minutes. They have not greeted you with their ID# and have been unresponsive to your attempts at reaching them through in app communication. You are now not obligated to wait any longer and can officially cancel this service."
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView59"
+            app:layout_constraintStart_toStartOf="@+id/textView59"
+            app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+        <TextView
+            android:id="@+id/go_back"
+            android:layout_width="120dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rounded_corner_11"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="No"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view36"
+            app:layout_constraintStart_toStartOf="@+id/textView60"
+            app:layout_constraintTop_toBottomOf="@+id/textView60">
+
+        </TextView>
+
+        <TextView
+
+            android:id="@+id/cancel_call"
+            android:layout_width="128dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/round_backgroundblack"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="Yes"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view36"
+            app:layout_constraintEnd_toEndOf="@+id/textView60"
+            app:layout_constraintStart_toEndOf="@+id/go_back"
+            app:layout_constraintTop_toBottomOf="@+id/textView60">
+
+        </TextView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

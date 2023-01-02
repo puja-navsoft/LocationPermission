@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/reassign"
+    android:visibility="gone"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:visibility="visible"
+        android:id="@+id/navClickAgain"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rounded_corner_1" />
+
+    <ImageView
+        android:visibility="visible"
+        android:id="@+id/iv_menusymbol"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/navClickAgain"
+        app:layout_constraintEnd_toEndOf="@+id/navClickAgain"
+        app:layout_constraintStart_toStartOf="@+id/navClickAgain"
+        app:layout_constraintTop_toTopOf="@+id/navClickAgain"
+        app:srcCompat="@drawable/menu" />
+
+
+    <TextView
+        android:id="@+id/textView82"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:lineSpacingExtra="5dp"
+        android:text="Reassignment service Call"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/navClickAgain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/navClickAgain"
+        app:layout_constraintTop_toTopOf="@+id/navClickAgain" />
+
+    <TextView
+        android:id="@+id/tv_reassignmentLocation"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="90dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/poppins_regular"
+        android:maxLines="3"
+        android:text="21 McRae Dr East York\nOttawa"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView53"
+        app:layout_constraintEnd_toStartOf="@+id/iv_navigatebuttonForReassignment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_navigatebuttonForReassignment" />
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/iv_navigatebuttonForReassignment"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView82"
+        app:srcCompat="@drawable/round_grey" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_navigatebuttonForReassignment"
+        app:layout_constraintEnd_toEndOf="@+id/iv_navigatebuttonForReassignment"
+        app:layout_constraintStart_toStartOf="@+id/iv_navigatebuttonForReassignment"
+        app:layout_constraintTop_toTopOf="@+id/iv_navigatebuttonForReassignment"
+        app:srcCompat="@drawable/arrowloc" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Navigate"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_navigatebuttonForReassignment"
+        app:layout_constraintTop_toBottomOf="@+id/iv_navigatebuttonForReassignment" />
+
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/textView86"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Instruction to follow"
+        app:layout_constraintStart_toStartOf="@+id/tv_reassignmentLocation"
+        app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/textView87"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="1. Go to the location."
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/textView86"
+        app:layout_constraintTop_toBottomOf="@+id/textView86" />
+
+    <TextView
+        android:id="@+id/textView88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Load Cargo to your vehicle"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/textView86"
+        app:layout_constraintTop_toBottomOf="@+id/textView87"
+        tools:layout_editor_absoluteX="21dp" />
+
+    <TextView
+        android:id="@+id/textView89"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:text="3. Swipe the 'Start Driving Button' to get the droppff location."
+        app:layout_constraintStart_toStartOf="@+id/textView88"
+        app:layout_constraintTop_toBottomOf="@+id/textView88" />
+
+
+    <com.ncorti.slidetoact.SlideToActView
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:elevation="4dp"
+        app:area_margin="4dp"
+        app:animation_duration="250"
+        app:outer_color="#2271FC"
+        app:inner_color="@color/white"
+        app:border_radius="25dp"
+        app:text="Start Driving"
+        app:text_size="17sp"
+        app:fontFamily="@font/poppins_semibold"
+        app:slider_height="50dp"
+        app:slider_locked="false"
+        app:icon_margin="5dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/_7sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/btn_startDrivingreassignment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </com.ncorti.slidetoact.SlideToActView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

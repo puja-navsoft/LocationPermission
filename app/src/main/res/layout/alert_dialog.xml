@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:paddingTop="15dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+<!--
+    <EditText
+
+        android:paddingTop="@dimen/_7sdp"
+        android:paddingBottom="@dimen/_7sdp"
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="15sp"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+-->
+
+    <View
+
+        android:layout_marginTop="20dp"
+
+        android:id="@+id/view34"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:paddingTop="@dimen/_7sdp"
+        android:paddingBottom="@dimen/_7sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+    <EditText
+        android:id="@+id/et_fname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:paddingTop="@dimen/_7sdp"
+        android:paddingBottom="@dimen/_7sdp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view34" />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:id="@+id/view35"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingTop="@dimen/_7sdp"
+        android:paddingBottom="@dimen/_7sdp"
+        app:layout_constraintTop_toBottomOf="@+id/et_fname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+       />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:paddingTop="@dimen/_7sdp"
+        android:paddingBottom="@dimen/_7sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="15sp"
+        android:id="@+id/et_lname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:maxLength="20"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view35"
+        app:layout_constraintTop_toBottomOf="@+id/view35" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/bt_Cancel"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_corner_3_black"
+        android:paddingStart="55dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="55dp"
+        android:paddingBottom="10dp"
+        android:text="Cancel"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view35"
+        app:layout_constraintTop_toBottomOf="@+id/et_lname" />
+
+    <TextView
+        android:background="@drawable/round_backgroundblack"
+
+        android:paddingStart="55dp"
+        android:paddingEnd="55dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/bt_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Ok"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view35"
+        app:layout_constraintTop_toTopOf="@+id/bt_Cancel" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/textView34"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Edit Name"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

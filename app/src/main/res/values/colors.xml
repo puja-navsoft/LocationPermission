@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="show">#26A1FB</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="black1">#CE000000</color>
+    <color name="txtcolor">#242424</color>
+    <color name="background">#ECEAEA</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#939496</color>
+    <color name="serviceprimary">#2271FC</color>
+    <color name="servicesecondary">#159688</color>
+    <color name="colorPrimary">#F2F2F2</color>
+    <color name="textcolor">#919191</color>
+    <color name="chatbackground">#F2F9FF</color>
+        <color name="colorPrimaryDark">#00574B</color>
+        <color name="colorAccent">#D81B60</color>
+        <color name="redemergency">#FF1010</color>
+        <color name="red">#F44336</color>
+        <color name="colorTransparent">#80000000</color>
+        <color name="colorTransparent_full">#00000000</color>
+        <color name="colorTransparent20">#32000000</color>
+        <color name="text_color_font">#919191</color>
+    <color name="semiTransparent">#8F000000</color>
+
+        <color name="colorWhite">#FFFFFF</color>
+        <color name="splash_color">#F26822</color>
+        <color name="image_overlay_color1">#E6000000</color>
+        <color name="image_overlay_color2">#DD545454</color>
+        <color name="drop_off_page_text_color">#D2545454</color>
+
+        <color name="text_color_heading">#000000</color>
+        <color name="txt_color">#666666</color>
+        <color name="text_color_social">#26A1FB</color>
+        <color name="colorwork">#26A1FB</color>
+        <color name="view1">#DDDDDD</color>
+        <color name="view2">#EEEEEE</color>
+        <color name="green">#11C818</color>
+
+        <color name="land_home_tab">#F9A09A</color>
+        <color name="land_office_tab">#69C3D5</color>
+        <color name="land_gym_tab">#69D59C</color>
+
+        <color name="trip_recycler_background_color">#F6F6F6</color>
+        <color name="trip_sub_heading_color">#999999</color>
+
+        <color name="star_color_unselected">#AAAAAA</color>
+        <color name="cargo_item_background">#F9F9F9</color>
+
+        <color name="cargo_item_sub_heading_color">#666666</color>
+
+</resources>

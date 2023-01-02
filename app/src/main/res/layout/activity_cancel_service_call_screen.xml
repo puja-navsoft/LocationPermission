@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cancelservicecallscreen.CancelServiceCallScreen">
+
+    <ScrollView
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/left_arrow" />
+
+    <TextView
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="28dp"
+        android:id="@+id/textView67"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel Call Reason"
+        android:textSize="22sp"
+        android:textColor="#242424"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/iv_back"
+        app:layout_constraintTop_toBottomOf="@+id/iv_back" />
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:textColor="#242424"
+        android:id="@+id/textView68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Cargo items too large/heavy?"
+        app:layout_constraintStart_toStartOf="@+id/textView67"
+        app:layout_constraintTop_toBottomOf="@+id/textView67" />
+
+    <CheckBox
+        android:layout_marginEnd="20dp"
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textView68"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView68" />
+
+    <ImageView
+        android:id="@+id/vehicle1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textView68"
+        app:layout_constraintTop_toBottomOf="@+id/textView68"
+        app:srcCompat="@drawable/round_background_grey" />
+
+          <ProgressBar
+              android:visibility="gone"
+              android:id="@+id/pd_loadervehicle1"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              app:layout_constraintBottom_toBottomOf="@+id/vehicle1"
+              app:layout_constraintEnd_toEndOf="@+id/vehicle1"
+              app:layout_constraintStart_toStartOf="@+id/vehicle1"
+              app:layout_constraintTop_toTopOf="@+id/vehicle1"></ProgressBar>
+
+
+          <ImageView
+        android:layout_marginTop="12dp"
+        android:id="@+id/imageView37"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/vehicle1"
+        app:layout_constraintStart_toStartOf="@+id/vehicle1"
+        app:layout_constraintTop_toTopOf="@+id/vehicle1"
+        app:srcCompat="@drawable/addimaginservicecallcancel" />
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="11sp"
+        android:layout_marginBottom="11dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/vehicle1"
+        app:layout_constraintEnd_toEndOf="@+id/vehicle1"
+        app:layout_constraintStart_toStartOf="@+id/vehicle1" />
+
+
+    <ImageView
+        android:layout_marginStart="20dp"
+        android:id="@+id/vehicle2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/vehicle1"
+        app:layout_constraintTop_toBottomOf="@+id/textView68"
+        app:srcCompat="@drawable/round_background_grey" />
+
+          <ProgressBar
+              android:visibility="gone"
+              android:id="@+id/pd_loadervehicle2"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              app:layout_constraintBottom_toBottomOf="@+id/vehicle2"
+              app:layout_constraintEnd_toEndOf="@+id/vehicle2"
+              app:layout_constraintStart_toStartOf="@+id/vehicle2"
+              app:layout_constraintTop_toTopOf="@+id/vehicle2"></ProgressBar>
+
+
+          <ImageView
+        android:layout_marginTop="12dp"
+        android:id="@+id/imageView38"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/vehicle2"
+        app:layout_constraintStart_toStartOf="@+id/vehicle2"
+        app:layout_constraintTop_toTopOf="@+id/vehicle2"
+        app:srcCompat="@drawable/addimaginservicecallcancel" />
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_marginBottom="11dp"
+
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/vehicle2"
+        app:layout_constraintEnd_toEndOf="@+id/vehicle2"
+        app:layout_constraintStart_toStartOf="@+id/vehicle2" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16sp"
+        android:textColor="#242424"
+        android:id="@+id/textView681"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/textView67"
+        app:layout_constraintTop_toBottomOf="@+id/vehicle2" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textView681"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toTopOf="@+id/textView681" />
+
+    <ImageView
+        android:id="@+id/restricted1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textView681"
+        app:layout_constraintTop_toBottomOf="@+id/textView681"
+        app:srcCompat="@drawable/round_background_grey" />
+
+          <ProgressBar
+              android:visibility="gone"
+              android:id="@+id/pd_loaderRestricted1"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              app:layout_constraintBottom_toBottomOf="@+id/restricted1"
+              app:layout_constraintEnd_toEndOf="@+id/restricted1"
+              app:layout_constraintStart_toStartOf="@+id/restricted1"
+              app:layout_constraintTop_toTopOf="@+id/restricted1"></ProgressBar>
+
+
+          <ImageView
+        android:layout_marginTop="12dp"
+        android:id="@+id/imageView371"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/restricted1"
+        app:layout_constraintStart_toStartOf="@+id/restricted1"
+        app:layout_constraintTop_toTopOf="@+id/restricted1"
+        app:srcCompat="@drawable/addimaginservicecallcancel" />
+
+    <TextView
+        android:id="@+id/textView691"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="11sp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/restricted1"
+        app:layout_constraintEnd_toEndOf="@+id/restricted1"
+        app:layout_constraintStart_toStartOf="@+id/restricted1" />
+
+
+    <ImageView
+
+        android:id="@+id/restricted2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/restricted1"
+        app:layout_constraintTop_toTopOf="@+id/restricted1"
+        app:srcCompat="@drawable/round_background_grey" />
+
+          <ProgressBar
+              android:visibility="gone"
+              android:id="@+id/pd_loaderRestricted2"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              app:layout_constraintBottom_toBottomOf="@+id/restricted2"
+              app:layout_constraintEnd_toEndOf="@+id/restricted2"
+              app:layout_constraintStart_toStartOf="@+id/restricted2"
+              app:layout_constraintTop_toTopOf="@+id/restricted2"></ProgressBar>
+
+
+          <ImageView
+        android:layout_marginTop="12dp"
+        android:id="@+id/imageView3711"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/restricted2"
+        app:layout_constraintStart_toStartOf="@+id/restricted2"
+        app:layout_constraintTop_toTopOf="@+id/restricted2"
+        app:srcCompat="@drawable/addimaginservicecallcancel" />
+
+    <TextView
+        android:id="@+id/textView6911"
+        android:layout_width="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+
+        android:fontFamily="@font/poppins_medium"
+        android:text="3. No help to load cargo?"
+        android:textColor="#242424"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/check_loadCargo"
+        app:layout_constraintStart_toStartOf="@+id/iv_back"
+        app:layout_constraintTop_toBottomOf="@+id/restricted2" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:textColor="#242424"
+        android:id="@+id/textView6811"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Restricted Cargo Item?"
+        app:layout_constraintStart_toStartOf="@+id/textView67"
+        app:layout_constraintTop_toBottomOf="@+id/vehicle2" />
+
+    <CheckBox
+        android:id="@+id/check_loadCargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6911"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox2"
+        app:layout_constraintTop_toTopOf="@+id/textView6911" />
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="0dp"
+        android:layout_marginEnd="25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="4. Customer no longer needs\nthe service?"
+        android:textColor="#242424"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/check_needservice"
+        app:layout_constraintStart_toStartOf="@+id/iv_back"
+        app:layout_constraintTop_toBottomOf="@+id/textView6911" />
+
+    <CheckBox
+        android:id="@+id/check_needservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textView71"
+        app:layout_constraintEnd_toEndOf="@+id/check_loadCargo"
+        app:layout_constraintTop_toTopOf="@+id/textView71" />
+
+          <TextView
+              android:id="@+id/textView72"
+              android:layout_width="wrap_content"
+              android:layout_marginEnd="25dp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="27dp"
+              android:fontFamily="@font/poppins_medium"
+              android:text="5. Inappropriate customer\nbehaviour?"
+              android:textColor="#242424"
+              android:textSize="13sp"
+              app:layout_constraintStart_toStartOf="@+id/textView71"
+              app:layout_constraintTop_toBottomOf="@+id/textView71" />
+
+          <CheckBox
+              android:id="@+id/check_inappropriatebehave"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintBottom_toBottomOf="@+id/textView72"
+              app:layout_constraintEnd_toEndOf="@+id/check_needservice"
+              app:layout_constraintTop_toTopOf="@+id/textView72" />
+
+          <TextView
+              android:layout_marginTop="25dp"
+              android:id="@+id/textView73"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:text="6. Other"
+              android:fontFamily="@font/poppins_medium"
+              android:textColor="#242424"
+              android:textSize="16sp"
+              app:layout_constraintStart_toStartOf="@+id/textView72"
+              app:layout_constraintTop_toBottomOf="@+id/textView72" />
+
+          <EditText
+              android:id="@+id/et_other"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="17dp"
+              android:ems="10"
+              android:hint="Description"
+              android:inputType="textPersonName"
+              app:layout_constraintEnd_toEndOf="@+id/checkother"
+              app:layout_constraintStart_toStartOf="@+id/textView73"
+              app:layout_constraintTop_toBottomOf="@+id/textView73" />
+
+
+          <Button
+              android:layout_marginTop="86dp"
+              android:layout_marginBottom="38dp"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/et_other"
+              android:id="@+id/tv_cancellCall"
+              android:layout_width="0dp"
+              android:layout_height="50dp"
+              android:layout_marginEnd="20dp"
+              android:background="@drawable/round_background_2"
+              android:fontFamily="@font/poppins_semibold"
+              android:paddingTop="@dimen/_5sdp"
+              android:text="Cancel Call"
+              android:textAllCaps="false"
+              android:textColor="@color/colorWhite"
+              android:textSize="@dimen/_15ssp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="@+id/iv_back"
+              tools:layout_editor_absoluteY="818dp" />
+
+          <ImageView
+              android:id="@+id/iv_infomore"
+              android:layout_width="17dp"
+              android:layout_height="17dp"
+              app:layout_constraintBottom_toBottomOf="@+id/textView72"
+              app:layout_constraintStart_toEndOf="@+id/textView72"
+              app:layout_constraintTop_toTopOf="@+id/textView72"
+              app:layout_constraintVertical_bias="1"
+              app:srcCompat="@drawable/information" />
+
+          <View
+              android:clickable="true"
+              android:visibility="gone"
+              android:id="@+id/maintransViewCancelServiceCall"
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              app:layout_constraintBottom_toBottomOf="parent"
+              android:background="@drawable/round_background_2_trans"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+
+          <View
+
+              android:id="@+id/tooltipView"
+              android:layout_width="360dp"
+              android:layout_height="120dp"
+              android:background="@drawable/round_background_2_white"
+              android:visibility="gone"
+              app:layout_constraintBottom_toTopOf="@+id/tooltipImg"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent" />
+
+          <ImageView
+              android:visibility="gone"
+              android:id="@+id/tooltipImg"
+              android:layout_width="19dp"
+              android:layout_height="17dp"
+              app:layout_constraintBottom_toTopOf="@+id/iv_infomore"
+              app:layout_constraintEnd_toEndOf="@+id/iv_infomore"
+              app:layout_constraintStart_toStartOf="@+id/iv_infomore"
+              app:srcCompat="@drawable/tooltip" />
+
+          <TextView
+              android:visibility="visible"
+              android:layout_margin="15dp"
+              android:id="@+id/tooltipTxt"
+              android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:textColor="#666666"
+              android:fontFamily="@font/poppins_regular"
+              android:textSize="14sp"
+              android:text="It would be considered inappropriate\nbehaviour if a customer is physically or\nverbally abusive,confrontational and\nuncooperative"
+              app:layout_constraintBottom_toBottomOf="@+id/tooltipView"
+              app:layout_constraintEnd_toEndOf="@+id/tooltipView"
+              app:layout_constraintStart_toStartOf="@+id/tooltipView"
+              app:layout_constraintTop_toTopOf="@+id/tooltipView" />
+
+          <CheckBox
+              android:id="@+id/checkother"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text=""
+              app:layout_constraintBottom_toBottomOf="@+id/textView73"
+              app:layout_constraintEnd_toEndOf="@+id/check_inappropriatebehave"
+              app:layout_constraintTop_toTopOf="@+id/textView73" />
+
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

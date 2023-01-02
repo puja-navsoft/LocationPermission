@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parent"
+    tools:context=".driverinformation.DriverInformationScreen">
+
+
+    <ScrollView
+
+
+        android:id="@+id/ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:paddingBottom="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F5F6F6F6">
+
+
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/iv_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/left_arrow" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Driver Information"
+                android:textColor="#242424"
+                android:textSize="27sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/iv_back"
+                app:layout_constraintTop_toBottomOf="@+id/iv_back" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_user"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/imground"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/pd_loader"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_user"
+                app:layout_constraintEnd_toEndOf="@+id/iv_user"
+                app:layout_constraintStart_toStartOf="@+id/iv_user"
+                app:layout_constraintTop_toTopOf="@+id/iv_user"></ProgressBar>
+
+            <ImageView
+                android:id="@+id/iv_editPrflPic"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="65dp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_user"
+                app:layout_constraintStart_toStartOf="@+id/iv_user"
+                app:layout_constraintTop_toTopOf="@+id/iv_user"
+                app:layout_constraintVertical_bias="0.909"
+                app:srcCompat="@drawable/rounded_corner_1_orng" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="48dp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_editPrflPic"
+                app:layout_constraintEnd_toEndOf="@+id/iv_editPrflPic"
+                app:layout_constraintStart_toStartOf="@+id/iv_editPrflPic"
+                app:layout_constraintTop_toTopOf="@+id/iv_user"
+                app:srcCompat="@drawable/cam" />
+
+            <ImageView
+                android:paddingTop="8dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:id="@+id/iv_info"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+                app:layout_constraintStart_toEndOf="@+id/iv_editPrflPic"
+                app:layout_constraintTop_toTopOf="@+id/imageView14"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/information" />
+
+            <View
+                android:visibility="gone"
+                android:id="@+id/maintransView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@drawable/round_background_2_trans"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView34"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_user"
+                app:layout_constraintEnd_toEndOf="@+id/iv_info"
+                app:layout_constraintStart_toStartOf="@+id/iv_info"
+                app:layout_constraintTop_toBottomOf="@+id/iv_info"
+                app:srcCompat="@drawable/up" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tooltipView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/round_background_2_white"
+                android:paddingTop="4dp"
+                android:paddingBottom="1dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView34">
+
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="A Driver Photo is mandatory and it must be a current, high quality, front profile picture with a full unobstructed view of your face."
+                    android:textColor="#666666"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/ev_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:layout_marginEnd="30dp"
+                android:background="@null"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textPersonName"
+                android:hint="Address (As it appears on your Driver’s License) *"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView26"
+                app:layout_constraintTop_toBottomOf="@+id/iv_user" />
+
+            <View
+                android:id="@+id/view21"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/ev_address"
+                app:layout_constraintStart_toStartOf="@+id/ev_address"
+                app:layout_constraintTop_toBottomOf="@+id/ev_address" />
+
+            <EditText
+                android:id="@+id/ev_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="30dp"
+                android:background="@null"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textPersonName"
+                android:hint="City *"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView26"
+                app:layout_constraintTop_toBottomOf="@+id/view21" />
+
+            <View
+                android:id="@+id/view22"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/ev_city"
+                app:layout_constraintStart_toStartOf="@+id/ev_city"
+                app:layout_constraintTop_toBottomOf="@+id/ev_city" />
+
+
+            <EditText
+                android:id="@+id/ev_province"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="30dp"
+                android:background="@null"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textPersonName"
+                android:hint="Province *"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView26"
+                app:layout_constraintTop_toBottomOf="@+id/view22" />
+
+            <View
+                android:id="@+id/view23"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/ev_province"
+                app:layout_constraintStart_toStartOf="@+id/ev_province"
+                app:layout_constraintTop_toBottomOf="@+id/ev_province" />
+
+
+            <EditText
+                android:id="@+id/ev_postalcode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="30dp"
+                android:background="@null"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textPersonName"
+                android:hint="Postal Code *"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView26"
+                app:layout_constraintTop_toBottomOf="@+id/view23" />
+
+            <View
+                android:id="@+id/view24"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/ev_postalcode"
+                app:layout_constraintStart_toStartOf="@+id/ev_postalcode"
+                app:layout_constraintTop_toBottomOf="@+id/ev_postalcode" />
+
+            <TextView
+                android:id="@+id/editUpload"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="30dp"
+                android:background="@null"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textPersonName"
+                android:text="Upload Driving Licence *"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/view24"
+                app:layout_constraintTop_toBottomOf="@+id/view24" />
+
+            <ImageView
+                android:id="@+id/iv_front"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@+id/editUpload"
+                app:layout_constraintTop_toBottomOf="@+id/editUpload"
+                app:srcCompat="@drawable/round_background_greylight" />
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/pd_loaderFront"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_front"
+                app:layout_constraintEnd_toEndOf="@+id/iv_front"
+                app:layout_constraintStart_toStartOf="@+id/iv_front"
+                app:layout_constraintTop_toTopOf="@+id/iv_front"></ProgressBar>
+
+            <ImageView
+                android:id="@+id/iv_frntcam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_front"
+                app:layout_constraintEnd_toEndOf="@+id/iv_front"
+                app:layout_constraintStart_toStartOf="@+id/iv_front"
+                app:layout_constraintTop_toTopOf="@+id/iv_front"
+                app:srcCompat="@drawable/cam" />
+
+            <ImageView
+                android:id="@+id/iv_back_"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_front"
+                app:layout_constraintStart_toEndOf="@+id/iv_front"
+                app:layout_constraintTop_toTopOf="@+id/iv_front"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/round_background_greylight" />
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/pd_loaderBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_back_"
+                app:layout_constraintEnd_toEndOf="@+id/iv_back_"
+                app:layout_constraintStart_toStartOf="@+id/iv_back_"
+                app:layout_constraintTop_toTopOf="@+id/iv_back_"></ProgressBar>
+
+
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_back_"
+                app:layout_constraintEnd_toEndOf="@+id/iv_back_"
+                app:layout_constraintStart_toStartOf="@+id/iv_back_"
+                app:layout_constraintTop_toTopOf="@+id/iv_back_"
+                app:srcCompat="@drawable/cam" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Back"
+                android:textColor="#919191"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_back_"
+                app:layout_constraintEnd_toEndOf="@+id/imageView26"
+                app:layout_constraintStart_toStartOf="@+id/imageView26"
+                app:layout_constraintTop_toBottomOf="@+id/imageView26" />
+
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Front"
+                android:textColor="#919191"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_front"
+                app:layout_constraintEnd_toEndOf="@+id/iv_front"
+                app:layout_constraintStart_toStartOf="@+id/iv_front"
+                app:layout_constraintTop_toBottomOf="@+id/iv_frntcam" />
+
+
+            <EditText
+                android:id="@+id/editLicense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="30dp"
+                android:background="@null"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textPersonName"
+                android:hint="License Number *"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView26"
+                app:layout_constraintTop_toBottomOf="@+id/iv_front" />
+
+            <View
+                android:id="@+id/view27"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/editLicense"
+                app:layout_constraintStart_toStartOf="@+id/editLicense"
+                app:layout_constraintTop_toBottomOf="@+id/editLicense" />
+
+            <EditText
+                android:focusable="false"
+                android:id="@+id/editDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="30dp"
+                android:background="@null"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Date of expiry *"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/view27"
+                app:layout_constraintTop_toBottomOf="@+id/view27" />
+
+            <View
+                android:id="@+id/view28"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/editDate"
+                app:layout_constraintStart_toStartOf="@+id/editDate"
+                app:layout_constraintTop_toBottomOf="@+id/editDate" />
+
+            <ImageView
+                android:id="@+id/iv_cal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/editDate"
+                app:layout_constraintEnd_toEndOf="@+id/editDate"
+                app:layout_constraintTop_toTopOf="@+id/editDate"
+                app:srcCompat="@drawable/calblack" />
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/btn_nxt_click"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:layout_marginBottom="@dimen/_40sdp"
+                android:background="@drawable/round_background_2"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="Next"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintTop_toBottomOf="@+id/view28" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

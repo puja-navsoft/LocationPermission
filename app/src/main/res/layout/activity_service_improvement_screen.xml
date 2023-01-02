@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainC"
+
+    tools:context=".serviceimprovementscreen.ServiceImprovementScreen">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/left_arrow" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView31"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Service improvment suggestions"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="27sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/iv_back"
+        app:layout_constraintTop_toBottomOf="@+id/iv_back" />
+
+    <EditText
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/et_subject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@null"
+        android:ems="10"
+
+        android:fontFamily="@font/poppins_medium"
+        android:inputType="textPersonName"
+        android:hint="Subject *"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView31"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <View
+        android:layout_marginTop="10dp"
+        android:id="@+id/view31"
+        android:layout_width="0dp"
+        android:layout_height="1sp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/et_subject"
+        app:layout_constraintStart_toStartOf="@+id/et_subject"
+        app:layout_constraintTop_toBottomOf="@+id/et_subject" />
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Description *"
+        android:inputType="textPersonName"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text=""
+        android:textColor="@color/black"
+
+        app:layout_constraintEnd_toEndOf="@+id/et_subject"
+        app:layout_constraintStart_toStartOf="@+id/view31"
+        app:layout_constraintTop_toBottomOf="@+id/view31" />
+
+    <View
+        app:layout_constraintEnd_toEndOf="@+id/view31"
+        android:id="@+id/view32"
+        android:layout_width="0dp"
+        android:layout_height="1sp"
+        android:layout_marginTop="100dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/view31"
+        app:layout_constraintTop_toBottomOf="@+id/et_description" />
+
+    <TextView
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/round_background_2"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16sp"
+        android:id="@+id/tv_submit"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Submit"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view32"
+        app:layout_constraintStart_toStartOf="@+id/view32" />
+</androidx.constraintlayout.widget.ConstraintLayout>

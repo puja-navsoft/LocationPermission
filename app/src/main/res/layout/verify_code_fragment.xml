@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+        <variable
+            name="verifycode"
+            type="com.muve.muve_it_driver.ui.auth.verifycode.VerifyCodeViewModel" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/rlMain"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="#A6000000"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="@dimen/_1sdp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        tools:context=".ui.auth.verifycode.VerifyCodeActivity"
+        >
+
+        <RelativeLayout
+            android:visibility="visible"
+            android:id="@+id/mainRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_4">
+
+            <TextView
+                android:id="@+id/txt_verify_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_heading"
+                android:textColor="@color/text_color_heading"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="23sp"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                />
+
+
+
+            <ImageView
+
+                android:id="@+id/img_close"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:src="@drawable/close"/>
+
+            <TextView
+                android:id="@+id/txt_sub_head"
+                android:layout_below="@+id/txt_verify_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_sub_heading_modify"
+                android:textColor="@color/txt_color"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="14sp"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                />
+
+            <TextView
+
+                android:id="@+id/txt_sub_to"
+                android:layout_below="@+id/txt_sub_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="to"
+                android:textColor="@color/txt_color"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="14sp"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                />
+
+            <TextView
+                android:id="@+id/txt_sub_tonumberCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_sub_head"
+                android:layout_toEndOf="@+id/txt_sub_to"
+                android:layout_toRightOf="@id/txt_sub_to"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="+1"
+                android:textColor="@color/text_color_heading"
+                android:textSize="15sp" />
+
+
+
+            <TextView
+                android:layout_marginStart="7dp"
+                android:id="@+id/txt_sub_tonumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_sub_head"
+                android:layout_toEndOf="@+id/txt_sub_tonumberCode"
+                android:layout_toRightOf="@id/txt_sub_tonumberCode"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="48766689350789"
+                android:textColor="@color/text_color_heading"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:padding="10dp"
+                android:id="@+id/img_edit"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_below="@+id/txt_verify_code"
+                android:layout_toRightOf="@+id/txt_sub_head"
+                android:src="@drawable/pencil"
+                android:layout_marginTop="13dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"></ImageView>
+
+            <TextView
+                android:id="@+id/txt_enter_code"
+                android:layout_below="@+id/txt_sub_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_enter_code"
+                android:textColor="@color/txt_color"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="16sp"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                />
+
+            <TextView
+                android:id="@+id/txt_resend"
+                android:layout_below="@+id/txt_sub_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/text_color_social"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="16sp"
+                android:visibility="invisible"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                />
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/txt_resend_txt"
+                android:layout_below="@+id/txt_sub_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/text_color_social"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="16sp"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/lyt_code"
+                android:layout_below="@+id/txt_enter_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:weightSum="4">
+
+                <EditText
+                    android:id="@+id/edt_password1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:layout_weight="1"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:textSize="@dimen/_15ssp"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"/>
+
+                <EditText
+                    android:id="@+id/edt_password2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:textSize="@dimen/_15ssp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:id="@+id/edt_password3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_15ssp"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:id="@+id/edt_password4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:textSize="@dimen/_15ssp"
+                    android:layout_marginEnd="@dimen/_18sdp"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn_continue_for_email"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/lyt_code"
+                android:textAllCaps="false"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="23dp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/round_background_2"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/btn_continue"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16ssp" />
+
+
+            <Button
+                android:id="@+id/btn_continue"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_below="@+id/lyt_code"
+                android:textAllCaps="false"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="23dp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/round_background_2"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="@string/btn_continueandverify"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_15ssp" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/rounded_corner_4"
+            android:visibility="gone"
+            android:id="@+id/successPopup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <ImageView
+                android:visibility="invisible"
+
+                android:id="@+id/img_check"
+                android:layout_marginTop="20dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/check">
+
+            </ImageView>
+
+            <TextView
+                android:visibility="invisible"
+
+                android:id="@+id/txtOfsuccess"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="Success"
+                android:layout_below="@+id/img_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:visibility="invisible"
+
+                android:id="@+id/txtOfsuccessHeader"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="13sp"
+                android:textColor="#666666"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:text="Your Verification code has been verified"
+                android:layout_below="@+id/txtOfsuccess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <Button
+                android:visibility="invisible"
+
+                android:id="@+id/btn_continue_ofSuccess"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/txtOfsuccessHeader"
+                android:textAllCaps="false"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="23dp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/round_background_2"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/btn_continue_only"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16ssp" />
+
+
+
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

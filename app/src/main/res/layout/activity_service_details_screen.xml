@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    tools:context=".serviceCallDetailsScreen.ServiceDetailsScreen">
+
+
+
+
+        <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/iv_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/left_arrow" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/map"
+        android:fillViewport="true">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            app:behavior_peekHeight="@dimen/_1sdp"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+            android:id="@+id/mainCns"
+            android:paddingBottom="37dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:paddingTop="15dp"
+                android:paddingStart="15dp"
+                android:id="@+id/tv_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/tv_price"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/mainCns" />
+
+            <TextView
+                android:paddingTop="7dp"
+                android:paddingStart="15dp"
+                android:id="@+id/tv_servicenumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="12sp"
+                android:textColor="#999999"
+                app:layout_constraintEnd_toStartOf="@+id/tv_payType"
+                app:layout_constraintStart_toStartOf="@+id/tv_time"
+                app:layout_constraintTop_toBottomOf="@+id/tv_time" />
+
+            <TextView
+                android:paddingTop="15dp"
+                android:paddingStart="15dp"
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="18dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_time" />
+
+            <TextView
+                android:id="@+id/tv_payType"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="18dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Credit Card"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_servicenumber"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_servicenumber" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="0dp"
+                android:id="@+id/card1"
+                app:layout_constraintEnd_toEndOf="@+id/tv_payType"
+                app:layout_constraintStart_toStartOf="@+id/tv_servicenumber"
+                app:layout_constraintTop_toBottomOf="@+id/tv_servicenumber">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_distance"
+                        android:layout_width="0dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:paddingStart="15dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <View
+                        android:id="@+id/view"
+                        android:background="#666666"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_distance"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"></View>
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginStart="15dp"
+                        android:src="@drawable/circleblue"
+                        app:layout_constraintStart_toStartOf="@+id/tv_distance"
+                        app:layout_constraintTop_toBottomOf="@+id/view">
+
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView15"
+                        app:layout_constraintStart_toStartOf="@+id/imageView15"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView15"
+                        app:srcCompat="@drawable/line" />
+
+                    <ImageView
+                        android:id="@+id/imageView17"
+                        android:layout_width="20dp"
+                        android:layout_height="25dp"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+                        app:layout_constraintStart_toStartOf="@+id/imageView16"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView16"
+                        app:srcCompat="@drawable/mapsloc" />
+
+                    <TextView
+
+                        android:layout_marginEnd="10dp"
+                        android:id="@+id/tv_source"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView15"
+                        app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+                    <TextView
+                        android:layout_marginEnd="10dp"
+                        android:id="@+id/tv_destination"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/tv_source"
+                        app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+                    <View
+                        android:layout_marginTop="18dp"
+                        android:id="@+id/view1"
+                        android:background="#666666"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_destination"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"></View>
+
+                    <TextView
+                        android:id="@+id/tv_cartype"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Cargo van"
+                        android:textColor="#333333"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/tv_carImg"
+                        app:layout_constraintStart_toStartOf="@+id/imageView17"
+                        app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+                    <ImageView
+                        android:id="@+id/tv_carImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_destination"
+                        app:layout_constraintTop_toTopOf="@+id/tv_cartype"
+                        app:srcCompat="@drawable/pickupcargo" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+              <androidx.cardview.widget.CardView
+                android:layout_marginTop="27dp"
+                android:layout_width="0dp"
+                  android:layout_marginStart="18dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="0dp"
+                  android:id="@+id/card2"
+                app:layout_constraintEnd_toEndOf="@+id/tv_payType"
+                app:layout_constraintStart_toStartOf="@+id/tv_servicenumber"
+                app:layout_constraintTop_toBottomOf="@+id/card1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/iv_userImg"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/defaultperson" />
+
+                    <TextView
+
+                        android:id="@+id/tv_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text=""
+                        android:textColor="#333333"
+                        android:textSize="15sp"
+                        app:layout_constraintEnd_toStartOf="@+id/tv_driverid"
+                        app:layout_constraintStart_toEndOf="@+id/iv_userImg"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView45"
+                        android:layout_width="26dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="5dp"
+                        app:layout_constraintStart_toStartOf="@+id/tv_username"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_username"
+                        app:srcCompat="@drawable/star" />
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tv_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView45"
+                        app:layout_constraintStart_toEndOf="@+id/imageView45"
+                        app:layout_constraintTop_toTopOf="@+id/imageView45" />
+
+                    <TextView
+                        android:id="@+id/tv_driverid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner_11"
+                        android:fontFamily="@font/poppins_medium"
+                        android:paddingStart="10dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="8dp"
+                        android:text=""
+                        android:textColor="#242424"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tv_rating"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tv_username"
+                        app:layout_constraintTop_toTopOf="@+id/tv_username" />
+
+                    <View
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/view3"
+                        android:background="#666666"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_userImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"></View>
+
+                    <TextView
+                        android:paddingBottom="15dp"
+                        android:id="@+id/textView85"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="14sp"
+                        android:textColor="#666666"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintStart_toStartOf="@+id/iv_userImg"
+                        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+                    <RatingBar
+                        android:paddingBottom="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:id="@+id/ratingbar"
+                        style="@android:style/Widget.Material.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="0"
+
+                        android:theme="@style/RatingBar"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+                        app:layout_constraintTop_toTopOf="@+id/textView85" />
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+              </androidx.cardview.widget.CardView>
+
+
+              <androidx.cardview.widget.CardView
+                  android:layout_marginStart="18dp"
+                android:layout_marginTop="27dp"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="0dp"
+                  android:id="@+id/crdsprt"
+                  android:visibility="gone"
+                  app:layout_constraintEnd_toEndOf="@+id/tv_payType"
+                app:layout_constraintStart_toStartOf="@+id/tv_servicenumber"
+                app:layout_constraintTop_toBottomOf="@+id/card2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+
+                    <ImageView
+                        android:layout_marginBottom="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/imageView46"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/round_grey" />
+
+                    <ImageView
+                        android:id="@+id/imageView47"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        app:srcCompat="@drawable/hexacircle"
+                        app:layout_constraintTop_toTopOf="@+id/imageView46"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView46"
+                        app:layout_constraintLeft_toLeftOf="@+id/imageView46"
+                        app:layout_constraintRight_toRightOf="@+id/imageView46"/>
+
+                    <TextView
+                        android:layout_marginStart="15dp"
+                        android:id="@+id/textView84"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Support"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView46"
+                        app:layout_constraintStart_toEndOf="@+id/imageView46"
+                        app:layout_constraintTop_toTopOf="@+id/imageView46" />
+
+                    <ImageView
+                        android:id="@+id/imageView48"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginEnd="25dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView84"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/textView84"
+                        app:srcCompat="@drawable/grouparror" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+              </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

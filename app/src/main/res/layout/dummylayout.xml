@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:visibility="gone"
+    android:id="@+id/dummylayout"
+    android:background="@color/colorTransparent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_timerviewtooltip"
+        android:layout_width="19dp"
+        android:layout_height="17dp"
+        android:visibility="visible"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/tooltip" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:visibility="visible"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_timerviewtooltip"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/round_background_2_white"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:id="@+id/tv_timertext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="
+Your arrival notification has been sent. The customer who now has 5 minutes to greet you. After 5
+minutes attempt to contact customer through in app messaging before deciding to A) Continue waiting,
+or B) Cancel the Service Call."
+            android:textColor="#666666"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
